@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 5000;
 const express = require('express')
 const app = express()
 const cookieSession = require('cookie-session')
@@ -24,6 +25,6 @@ app.get('/auth/twitter/callback',passport.authenticate('twitter', { failureRedir
 function(req, res) {
   res.redirect('/');
 });
-app.listen(80,()=>{
-  console.log('Serve is up and running at the port 80')
+app.listen(PORT,()=>{
+  console.log(`Listening on Port ${PORT}`);
 })
