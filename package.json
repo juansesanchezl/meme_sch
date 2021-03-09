@@ -1,0 +1,26 @@
+{
+  "name": "meme_sch",
+  "version": "1.0.0",
+  "description": "Meme app scheduler with Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansesanchezl/meme_sch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juansesanchezl/meme_sch/issues"
+  },
+  "homepage": "https://github.com/juansesanchezl/meme_sch#readme",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "passport-twitter": "^1.0.4"
+  }
+}
