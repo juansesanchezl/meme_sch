@@ -12,6 +12,7 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 app.get('/',isLoggedIn,(req,res)=>{
+  console.log("Entro A Base");
   res.send(`Hello ${req.user.displayName}`)
 })
 app.get('/logout', (req, res) => {
