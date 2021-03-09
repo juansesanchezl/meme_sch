@@ -25,6 +25,8 @@ app.get('/auth/twitter/callback',passport.authenticate('twitter', { failureRedir
 function(req, res) {
   console.log("Someone Enter");
   console.log(req);
+  console.log("----------------------------------")
+  console.log(req.user?req.user:"Not User");
   res.redirect('/');
 });
 app.listen(PORT,()=>{
