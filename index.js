@@ -23,6 +23,7 @@ app.get('/auth/error', (req, res) => res.send('Unknown Error'))
 app.get('/auth/twitter',passport.authenticate('twitter'));
 app.get('/auth/twitter/callback',passport.authenticate('twitter', { failureRedirect: '/auth/error' }),
 function(req, res) {
+  console.log("Someone Enter");
   res.redirect('/');
 });
 app.listen(PORT,()=>{
